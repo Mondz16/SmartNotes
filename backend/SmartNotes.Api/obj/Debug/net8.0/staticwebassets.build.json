@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "Ia6GkT14W8uh7llBHJCYqxNWPCd3P9d2ecDCmyVGyNY=",
+  "Source": "SmartNotes.Api",
+  "BasePath": "_content/SmartNotes.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
