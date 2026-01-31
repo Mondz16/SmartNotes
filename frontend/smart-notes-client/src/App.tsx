@@ -4,6 +4,7 @@ import Register from './pages/Register';
 import Notes from './pages/Notes';
 import { useAuth } from './context/AuthContext';
 import './App.css';
+import type { JSX } from 'react/jsx-runtime';
 
 const ProtectedRoute = ({ children } : {children : JSX.Element} ) => {
   const { token } = useAuth();
