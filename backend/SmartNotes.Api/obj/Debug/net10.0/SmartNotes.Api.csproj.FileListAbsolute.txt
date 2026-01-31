@@ -155,3 +155,4 @@ C:\Users\chris\WebProjects\SmartNotes\backend\SmartNotes.Api\obj\Debug\net10.0\r
 C:\Users\chris\WebProjects\SmartNotes\backend\SmartNotes.Api\obj\Debug\net10.0\SmartNotes.Api.pdb
 C:\Users\chris\WebProjects\SmartNotes\backend\SmartNotes.Api\obj\Debug\net10.0\SmartNotes.Api.genruntimeconfig.cache
 C:\Users\chris\WebProjects\SmartNotes\backend\SmartNotes.Api\obj\Debug\net10.0\ref\SmartNotes.Api.dll
+C:\Users\chris\WebProjects\SmartNotes\backend\SmartNotes.Api\obj\Debug\net10.0\SmartNotes.Api.sourcelink.json

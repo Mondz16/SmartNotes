@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
@@ -14,10 +15,11 @@ builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlite("Data Source=notes.db"));
 
 builder.Services.AddScoped<IAuthService, AuthService>();
+builder.Services.AddScoped<INoteService, NoteService>();
 builder.Services.AddScoped<TextAnalysisService>();
 builder.Services.AddScoped<JwtTokenGenerator>();
 
-builder.Services.AddAuthentication("Bearer")
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer("Bearer", options =>
     {
         options.TokenValidationParameters = new()
@@ -43,7 +45,10 @@ builder.Services.AddOpenApi();
 // App
 // --------------------
 
+builder.Services.AddCors(options => { options.AddPolicy("AllowLocalhost", policy => policy.WithOrigins("http://localhost:5173") .AllowAnyHeader() .AllowAnyMethod());});
 var app = builder.Build();
+
+app.UseCors("AllowLocalhost");
 
 if (app.Environment.IsDevelopment())
 {
