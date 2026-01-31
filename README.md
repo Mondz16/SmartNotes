@@ -46,10 +46,8 @@ This project is a learning playground for **C#, .NET 10, React, JWT authenticati
 
 ---
 
-┌────────────┐ HTTP ┌──────────────┐
-│ React UI │ <----------> │ .NET 10 API │
-│ (Frontend)│ │ (Backend) │
-└────────────┘ └──────────────┘
+React UI │ (Frontend)
+.NET 10 API │(Backend) │
 | |
 | |
 Served via Nginx JWT Auth
